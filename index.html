@@ -27,6 +27,19 @@
   <meta property="og:title" content="Give me a kiss">
   <meta property="og:type" content="website">
   <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('message-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        var button = document.getElementById('send-button');
+        button.disabled = true; // Disable the button
+        button.innerText = 'IG: @Hawuzy'; // Change the button text
+        
+      });
+    });
+  </script>
 </head>
 
 <body data-home-page="https://website5161311.nicepage.io/Page-2.html?version=7448a0a6-f131-430e-801a-ee4bdf0d944f"
@@ -68,7 +81,7 @@
                   </div>
                   <div class="u-align-right u-form-group u-form-submit">
                     
-                    <button type="submit" 
+                    <button id="send-button" type="submit"
                       class="u-active-palette-4-light-1 u-border-5 u-border-active-palette-4-light-1 u-border-hover-palette-4-light-1 u-border-palette-4-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-4-light-1 u-palette-4-base u-radius-10 u-btn-1">Send
                       Message</button>
                   </div>
@@ -83,8 +96,6 @@
       </div>
     </div>
     </div>
-
-
 
 </body>
 
